@@ -32,8 +32,8 @@ header {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   transform: translate(-50%, -50%);
-  display: none;
-  transition: display 0.5s;
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
 .overlay-btn button {
@@ -44,8 +44,16 @@ header {
 }
 
 .card:hover .overlay-btn {
-  display: block;
-  transition: display 0.5s;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 
 .bgImg {

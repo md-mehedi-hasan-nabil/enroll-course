@@ -8,7 +8,7 @@ const CoursesCard = ({ course }) => {
       <Card className="my-3 mx-auto">
         <Card.Img variant="top" src={background} />
         <Card.Body>
-          <Card.Title>{name}</Card.Title>
+          <Card.Title className="text-ellipsis">{name}</Card.Title>
           <Card.Title>Price: ${price}</Card.Title>
           <small>Time: {registered}</small> <br />
           <small>Company: {company}</small>

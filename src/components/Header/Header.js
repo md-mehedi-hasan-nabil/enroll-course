@@ -1,10 +1,10 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const Header = ({ title, button }) => {
   return (
-    <>
+    <Container>
       <Row
         data-aos="zoom-out-up"
         className="d-flex align-items-center bgImg"
@@ -19,7 +19,7 @@ const Header = ({ title, button }) => {
           )}
         </Col>
       </Row>
-    </>
+    </Container>
   );
 };
 

@@ -4,6 +4,7 @@ import Courses from "../Courses/Courses";
 import Header from "../Header/Header";
 
 const Home = () => {
+  document.title = "Home Page";
   return (
     <main>
       <Header title="We give through a variety of courses. we have course on any subject related to IT." button="Get Started" />

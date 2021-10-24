@@ -9,6 +9,7 @@ const Courses = ({ item }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    document.title = "Couses";
     fetch("courses.json")
       .then((res) => res.json())
       .then((data) => {
@@ -17,8 +18,6 @@ const Courses = ({ item }) => {
       })
       .catch((error) => console.error(error));
   }, []);
-
-  document.title="Couses"
 
   return (
     <Container fluid>
